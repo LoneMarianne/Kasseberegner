@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kasseberegning</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="kasseJs.js"></script>	
+	</head>
+
+	<body>
+		<h1> Kasse</h1>
+		Beregner volume og overfladeareal af en kasse 	
+		<form id='form' name='kasse'>	
+			<img src="kasse.png"> <br/>	
+			<table >
+			<tr>		
+				<td>	Indtast  højde - er det ø </td>
+				<td>	<input style="text" name="hoejde"  />
+					<select id="enhedHoejde">
+						<option value="m">m</option>
+						<option value="cm">cm</option>
+						<option value="mm">mm</option>
+					</select>
+				</td>
+			</tr>
+			<tr>		
+				<td>	Indtast bredde</td>
+				<td>	<input style="text" name="bredde"  /></td>
+			</tr>
+			<tr>
+				<td>	Indtast længde</td>
+				<td>	<input style="text" name="laengde"  /></td>
+			</tr> 
+			<tr><td><br/></td></tr>
+			<tr>
+				<td><button type="button"  onclick="areal()"> Beregn overfladeareal </button></td>
+				<td><input style="text" name="overfladeAreal" /> m^2 </td>	
+			</tr>
+			<tr>
+				<td><button type="button"  onclick="volume()"> Beregn  volume </button><br/></td> 		
+				<td><input style="text" name="volumen" />m^3</td>
+			</tr>
+			</table>				
+		</form>
+	</body>
+</html>
