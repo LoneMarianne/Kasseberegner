@@ -3,9 +3,10 @@ var b;
 var l;
 
 function konverter(){
-	h= parseFloat(document.kasse.hoejde.value); //oversæt det indtastede til tal
-	b= parseFloat(document.kasse.bredde.value); //oversæt det indtastede til tal
-	l= parseFloat(document.kasse.laengde.value); //oversæt det indtastede til tal
+	
+	h = parseFloat(document.kasse.hoejde.value); //oversæt det indtastede til tal
+	b = parseFloat(document.kasse.bredde.value); //oversæt det indtastede til tal
+	l = parseFloat(document.kasse.laengde.value); //oversæt det indtastede til tal
    var enhed= document.kasse.enhedHoejde.value;
 	if(enhed=="cm") //cm
 		h=h*0.01;
